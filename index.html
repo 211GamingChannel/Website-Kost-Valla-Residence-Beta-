@@ -9,7 +9,26 @@
         body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; }
         .container { max-width: 600px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         h1 { color: #333; }
-        .btn { display: inline-block; background: #25d366; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        /* 1. Ini gaya dasar untuk SEMUA tombol (ukuran, tulisan, bentuk kotak) */
+.btn { 
+    display: inline-block; 
+    color: white; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    margin: 5px; /* Memberi sedikit jarak antar tombol agar tidak menempel */
+}
+
+/* 2. Ini khusus warna tombol WhatsApp */
+.btn-wa { 
+    background: #25d366; 
+}
+
+/* 3. Ini khusus warna tombol TikTok (Hitam asli) */
+.btn-tiktok { 
+    background: #000000; 
+}
     </style>
 </head>
 <body>
@@ -38,9 +57,9 @@
         <p><strong>Harga:</strong> Rp 1.000.000 / bulan</p>
         
         <!-- Tombol chat WA otomatis -->
-        <a href="https://wa.me/628129910683?text=Halo%20Kak,%20Saya%20tertarik%20tanya%20kos%20di%20dekat%20UII%20 " class="btn" target="_blank">Tanya Lewat WhatsApp</a>
+        <a href="https://wa.me/628129910683?text=Halo%20Kak,%20Saya%20tertarik%20tanya%20kos%20di%20dekat%20UII%20 " class="btn btn-wa" target="_blank">Tanya Lewat WhatsApp</a>
         <!-- Tombol TikTok -->
-        <a href="https://www.tiktok.com/@valla.putri?_r=1&_t=ZS-974OF0H1Rr8" class="btn" target="_blank">Ikuti di TikTok</a>
+        <a href="https://www.tiktok.com/@valla.putri?_r=1&_t=ZS-974OF0H1Rr8" class="btn-tiktok" target="_blank">Ikuti di TikTok</a>
 
     </div>
 
