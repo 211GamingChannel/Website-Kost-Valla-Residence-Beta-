@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kos Nyaman - Home</title>
+    <!-- Mengambil pustaka ikon gratis dari Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         /* Ini adalah CSS internal biar web kamu langsung kelihatan rapi */
         body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; }
@@ -28,6 +30,11 @@
 /* 3. Ini khusus warna tombol TikTok (Hitam asli) */
 .btn-tiktok { 
     background: #000000; 
+}
+/* Memberi jarak 8 pixel di sebelah kanan logo agar teks tidak menempel */
+.btn i {
+    margin-right: 8px;
+    font-size: 1.1rem; /* Membuat ukuran logo sedikit lebih proporsional */
 }
     </style>
 </head>
@@ -57,9 +64,11 @@
         <p><strong>Harga:</strong> Rp 1.000.000 / bulan</p>
         
         <!-- Tombol chat WA otomatis -->
-        <a href="https://wa.me/628129910683?text=Halo%20Kak,%20Saya%20tertarik%20tanya%20kos%20di%20dekat%20UII%20 " class="btn btn-wa" target="_blank">Tanya Lewat WhatsApp</a>
+        <a href="https://wa.me/628129910683?text=Halo%20Kak,%20Saya%20tertarik%20tanya%20kos%20di%20dekat%20UII%20 " class="btn btn-wa" target="_blank">
+            <i class="fab fa-whatsapp"></i> Tanya Lewat WhatsApp</a>
         <!-- Tombol TikTok -->
-        <a href="https://www.tiktok.com/@valla.putri?_r=1&_t=ZS-974OF0H1Rr8" class="btn-tiktok" target="_blank">Ikuti di TikTok</a>
+        <a href="https://www.tiktok.com/@valla.putri?_r=1&_t=ZS-974OF0H1Rr8" class="btn btn-tiktok" target="_blank">
+            <i class="fab fa-tiktok"></i> Ikuti di TikTok</a>
 
     </div>
 
