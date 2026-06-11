@@ -5,71 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kos Valla Residence - Home</title>
     <!-- Mengambil pustaka ikon gratis dari Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
-        /* Ini adalah CSS internal biar web kamu langsung kelihatan rapi */
+        /* CSS Utama untuk mengatur tampilan agar rapi dan responsif */
         body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; }
-        .container { max-width: 600px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        /* 1. Ini gaya dasar untuk SEMUA tombol (ukuran, tulisan, bentuk kotak) */
-.btn { 
-    display: inline-block; 
-    color: white; 
-    padding: 10px 15px; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    font-weight: bold; 
-    margin: 5px; /* Memberi sedikit jarak antar tombol agar tidak menempel */
-}
-
-/* 2. Ini khusus warna tombol WhatsApp */
-.btn-wa { 
-    background: #25d366; 
-}
-
-/* 3. Ini khusus warna tombol TikTok (Hitam asli) */
-.btn-tiktok { 
-    background: #000000; 
-}
-/* Memberi jarak 8 pixel di sebelah kanan logo agar teks tidak menempel */
-.btn i {
-    margin-right: 8px;
-    font-size: 1.1rem; /* Membuat ukuran logo sedikit lebih proporsional */
-}
+        .container { max-width: 600px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin: 0 auto; }
+        h1 { color: #333; margin-bottom: 5px; }
+        h3 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 25px; }
+        h4 { margin: 0 0 5px 0; color: #2c3e50; }
+        p { color: #555; line-height: 1.5; }
+        
+        /* Badge Khusus Putri */
+        .badge-putri { display: inline-block; background: #fff0f2; color: #e91e63; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; border: 1px solid #ffccd5; margin-bottom: 15px; }
+        
+        /* Desain Daftar Fasilitas */
+        ul { list-style: none; padding: 0; }
+        ul li { padding: 8px 0; border-bottom: 1px dashed #eee; color: #444; display: flex; align-items: center; }
+        ul li i { margin-right: 10px; color: #2c3e50; width: 20px; text-align: center; }
+        
+        /* Kotak Pilihan Tarif (Price Cards) */
+        .price-box { background: #fdfdfd; padding: 15px; border-left: 5px solid #2c3e50; margin-bottom: 12px; border-radius: 0 8px 8px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        .price-box p { margin: 5px 0; }
+        .detail-isian { font-size: 0.85rem; color: #777; background: #f5f5f5; padding: 8px; border-radius: 5px; margin-top: 5px !important; }
+        
+        /* Desain Gambar */
+        .img-kos { width: 100%; max-width: 350px; height: auto; display: block; margin: 20px auto; border-radius: 8px; }
+        
+        /* Desain Umum Tombol */
+        .btn { display: inline-block; color: white; padding: 12px 18px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 5px; text-align: center; }
+        .btn i { margin-right: 8px; font-size: 1.1rem; }
+        
+        /* Warna Tombol */
+        .btn-wa { background: #25d366; }
+        .btn-tiktok { background: #000000; color: white !important; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Selamat Datang di Kost Putri Valla Residence</h1>
+        <!-- Label Penanda -->
+        <span class="badge-putri"><i class="fas fa-venus"></i> Khusus Kost Putri</span>
+        
+        <h1>Kost Valla Residence</h1>
+        <p>Kos-kosan putri yang nyaman, tenang, aman, dan sangat strategis di dekat UII.</p>
+        
+        <!-- Gunting/Hapus baris img di bawah jika foto belum siap di folder -->
         <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEYl371UMRlk8gUibwWw6cJDUvEr_jyRZpj-C8ICf2_AqaEGtDKKFRuwQn3npKrBEYxE6AhokVPWjXqJXHkrW0rOwFVEfyY4WmLPgfJoy_pK7eRSM9yCUJ8_c_9hT26VFfo0S0=s1360-w1360-h1020-rw"
              alt="Kost Putri Valla Residence" style="width: 100%; height: auto; border-radius: 10px;">
-        <p>Kos-kosan nyaman, tenang, dan strategis.
-            Lokasi dekat dengan Universitas Islam Indonesia (UII) dan berbagai fasilitas umum lainnya. 
-            Cocok untuk mahasiswa, pekerja, atau siapa saja yang mencari tempat tinggal yang nyaman di sekitar UII.
-        </p>
-        
-        <h3>Fasilitas:</h3>
+
+        <!-- Spesifikasi Bangunan -->
+        <h3><i class="fas fa-home"></i> Spesifikasi Kamar</h3>
         <ul>
-            <li>Kamar mandi luas</li>
-            <li>Free Wi-Fi Cepat</li>
-            <li>Kasur Springbed</li>
-            <li>Lemari Pakaian</li>
-            <li>Meja Belajar</li>
-            <li>2 Dapur(Bawah & Atas)</li>
-            <li>2 Ruang Keluarga(Bawah & Atas)</li>
-            <li>Parkir Luas</li>
+            <li><i class="fas fa-ruler-combined"></i> Ukuran Kamar Utama: 3m x 4m</li>
+            <li><i class="fas fa-bath"></i> Kamar Mandi Dalam: 2m x 2m</li>
+            <li><i class="fas fa-bolt"></i> Listrik: Token 900 Watt (Masing-masing kamar)</li>
         </ul>
 
-        <p><strong>Harga:</strong> Rp 1.000.000 / bulan</p>
+        <!-- Pilihan Tarif -->
+        <h3><i class="fas fa-tags"></i> Pilihan Tarif & Fasilitas</h3>
         
-        <!-- Tombol chat WA otomatis -->
-        <a href="https://wa.me/628129910683?text=Halo%20Kak,%20Saya%20tertarik%20tanya%20kos%20di%20dekat%20UII%20 " class="btn btn-wa" target="_blank">
-            <i class="fab fa-whatsapp"></i> Tanya Lewat WhatsApp</a>
-        <!-- Tombol TikTok -->
-        <a href="https://www.tiktok.com/@valla.putri?_r=1&_t=ZS-974OF0H1Rr8" class="btn btn-tiktok" target="_blank">
-            <i class="fab fa-tiktok"></i> Ikuti di TikTok</a>
+        <div class="price-box">
+            <h4>1. Tipe Kosongan</h4>
+            <p><strong>Harga:</strong> Rp 8.500.000 / tahun</p>
+            <p style="font-size: 0.9rem; color: #888;">(Atau Rp 2.400.000 / 3 bulan)</p>
+        </div>
 
+        <div class="price-box" style="border-left-color: #e67e22;">
+            <h4>2. Tipe Kamar Isian</h4>
+            <p><strong>Harga:</strong> Rp 12.000.000 / tahun</p>
+            <p style="font-size: 0.9rem; color: #888;">(Atau Rp 3.000.000 / 3 bulan)</p>
+            <p class="detail-isian">
+                <strong>Fasilitas Kamar:</strong> Bed (120x200) + 1 bantal + 1 guling, Lemari pakaian, Meja belajar, Kursi, Kloset duduk, dan Hand shower.
+            </p>
+        </div>
+
+        <div class="price-box" style="border-left-color: #3498db;">
+            <h4>3. Tipe Isian + AC</h4>
+            <p><strong>Harga:</strong> Rp 14.000.000 / tahun</p>
+            <p style="font-size: 0.9rem; color: #888;">(Atau Rp 3.600.000 / 3 bulan)</p>
+        </div>
+
+        <div class="price-box" style="border-left-color: #2ecc71;">
+            <h4>4. Tipe Isian + AC + Water Heater</h4>
+            <p><strong>Harga:</strong> Rp 15.500.000 / tahun</p>
+            <p style="font-size: 0.9rem; color: #888;">(Atau Rp 3.900.000 / 3 micro-months / 3 bulan)</p>
+        </div>
+
+        <!-- Fasilitas Bersama Gratis -->
+        <h3><i class="fas fa-gift"></i> Fasilitas Gratis (Free Ammenities)</h3>
+        <ul>
+            <li><i class="fas fa-wifi"></i> WiFi Cepat Up to 50 Mbps</li>
+            <li><i class="fas fa-tint"></i> Gratis Air Bersih</li>
+            <li><i class="fas fa-couch"></i> Ruang Tamu Bersama</li>
+            <li><i class="fas fa-utensils"></i> 2 Unit Ruang Dapur Umum</li>
+            <li><i class="fas fa-snowflake"></i> 2 Unit Kulkas Bersama</li>
+        </ul>
+        
+        <br>
+        <!-- Tombol Aksi Media Sosial -->
+        <a href="https://wa.me/628129910683?text=Halo%20Kak,%20Saya%20tertarik%20tanya%20kos%20putri%20di%20Valla%20Residence" class="btn btn-wa" target="_blank">
+            <i class="fab fa-whatsapp"></i> Tanya Lewat WhatsApp
+        </a>
+
+        <a href="https://www.tiktok.com/@valla.putri?_r=1&_t=ZS-974OF0H1Rr8" class="btn btn-tiktok" target="_blank">
+            <i class="fab fa-tiktok"></i> Lihat di TikTok
+        </a>
     </div>
 
 </body>
